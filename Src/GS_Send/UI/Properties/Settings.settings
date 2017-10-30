@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CZZD.GSZX.S.UI.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="gszx_s_czzd_gszx_send__Send" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:55730/GS_WebService/Send.asmx</Value>
+    </Setting>
+    <Setting Name="gszx_s_czzd_gszx_receive__Receive" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:55730/GS_WebService/Receive.asmx</Value>
+    </Setting>
+    <Setting Name="gszx_r_czzd_gszx_receive__Receive" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:55730/GS_WebService/Receive.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CsvSetting>
+  <!-- 销售订单的同步间隔时间（秒）-->
+  <order_info>300</order_info>
+  <!-- 商品类别信息同步间隔时间（秒）-->
+  <product_category>86400</product_category>
+  <!-- 商品信息同步间隔时间（秒）-->
+  <product>300</product>
+  <!-- 商品信息同步的最后一次同步时间-->
+  <product_last_update_time></product_last_update_time>
+  <!-- 会员信息同步间隔时间（秒）-->
+  <customer>300</customer>
+  <!-- 会员信息同步的最后一次同步时间-->
+  <customer_last_update_time></customer_last_update_time>
+  <!-- 会员收货地址同步间隔时间（秒）-->
+  <customer_address>300</customer_address>
+  <!-- 会员收货地址同步的最后一次同步时间-->
+  <customer_address_last_update_time></customer_address_last_update_time>
+</CsvSetting>

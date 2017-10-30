@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://czzd.gszx.web.receive" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://czzd.gszx.web.receive" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://czzd.gszx.web.receive">
+      <s:element name="GetSystemTime">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetSystemTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSystemTimeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReceiveOrderStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="type" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="orderIDs" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="time" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="keys" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReceiveOrderStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReceiveOrderStatusResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReceiveOrderInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="type" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="orderId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="actualGoodsAmount" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="values" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="time" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="keys" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReceiveOrderInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReceiveOrderInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReceiveOrderInfos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="type" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xmlData" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="time" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="keys" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReceiveOrderInfosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReceiveOrderInfosResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetSystemTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSystemTime" />
+  </wsdl:message>
+  <wsdl:message name="GetSystemTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSystemTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReceiveOrderStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:ReceiveOrderStatus" />
+  </wsdl:message>
+  <wsdl:message name="ReceiveOrderStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:ReceiveOrderStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReceiveOrderInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:ReceiveOrderInfo" />
+  </wsdl:message>
+  <wsdl:message name="ReceiveOrderInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:ReceiveOrderInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReceiveOrderInfosSoapIn">
+    <wsdl:part name="parameters" element="tns:ReceiveOrderInfos" />
+  </wsdl:message>
+  <wsdl:message name="ReceiveOrderInfosSoapOut">
+    <wsdl:part name="parameters" element="tns:ReceiveOrderInfosResponse" />
+  </wsdl:message>
+  <wsdl:portType name="_ReceiveSoap">
+    <wsdl:operation name="GetSystemTime">
+      <wsdl:input message="tns:GetSystemTimeSoapIn" />
+      <wsdl:output message="tns:GetSystemTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReceiveOrderStatus">
+      <wsdl:input message="tns:ReceiveOrderStatusSoapIn" />
+      <wsdl:output message="tns:ReceiveOrderStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReceiveOrderInfo">
+      <wsdl:input message="tns:ReceiveOrderInfoSoapIn" />
+      <wsdl:output message="tns:ReceiveOrderInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReceiveOrderInfos">
+      <wsdl:input message="tns:ReceiveOrderInfosSoapIn" />
+      <wsdl:output message="tns:ReceiveOrderInfosSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="_ReceiveSoap" type="tns:_ReceiveSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetSystemTime">
+      <soap:operation soapAction="http://czzd.gszx.web.receive/GetSystemTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReceiveOrderStatus">
+      <soap:operation soapAction="http://czzd.gszx.web.receive/ReceiveOrderStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReceiveOrderInfo">
+      <soap:operation soapAction="http://czzd.gszx.web.receive/ReceiveOrderInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReceiveOrderInfos">
+      <soap:operation soapAction="http://czzd.gszx.web.receive/ReceiveOrderInfos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="_ReceiveSoap12" type="tns:_ReceiveSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetSystemTime">
+      <soap12:operation soapAction="http://czzd.gszx.web.receive/GetSystemTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReceiveOrderStatus">
+      <soap12:operation soapAction="http://czzd.gszx.web.receive/ReceiveOrderStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReceiveOrderInfo">
+      <soap12:operation soapAction="http://czzd.gszx.web.receive/ReceiveOrderInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReceiveOrderInfos">
+      <soap12:operation soapAction="http://czzd.gszx.web.receive/ReceiveOrderInfos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="_Receive">
+    <wsdl:port name="_ReceiveSoap" binding="tns:_ReceiveSoap">
+      <soap:address location="http://localhost:55730/GS_WebService/Receive.asmx" />
+    </wsdl:port>
+    <wsdl:port name="_ReceiveSoap12" binding="tns:_ReceiveSoap12">
+      <soap12:address location="http://localhost:55730/GS_WebService/Receive.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

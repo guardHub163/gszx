@@ -1,0 +1,99 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSZX.UI", "UI\GSZX.UI.csproj", "{30A30FE8-E3CB-4881-8613-C79952F70651}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSZX.Bll", "Bll\GSZX.Bll.csproj", "{782EB662-7A7A-449F-B70B-CD5171DB78B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSZX.Cache", "Cache\GSZX.Cache.csproj", "{531D39C2-1D0D-446F-BDDC-590B96CA0726}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSZX.Common", "Common\GSZX.Common.csproj", "{D856C778-5340-4943-8123-44134FF0984B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSZX.DALFactory", "DALFactory\GSZX.DALFactory.csproj", "{B18E664E-325A-41F8-BEF1-6704332D1BEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSZX.DBUtility", "DBUtility\GSZX.DBUtility.csproj", "{E7B0DC3A-A345-426A-A266-A85DB8AD30AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSZX.IDAL", "IDAL\GSZX.IDAL.csproj", "{9A88EF8E-6AD4-4EEF-BACD-69729752B606}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSZX.Model", "Model\GSZX.Model.csproj", "{2E890B50-83AC-439E-8A11-F9CCF9BB634E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSZX.SQLServerDAL", "SQLServerDAL\GSZX.SQLServerDAL.csproj", "{07E72092-1D90-47EC-803A-FCB0D272BC30}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 10
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Bll\\GSZX.Bll.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = Bll\\
+		SccProjectUniqueName2 = Cache\\GSZX.Cache.csproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = Cache\\
+		SccProjectUniqueName3 = Common\\GSZX.Common.csproj
+		SccLocalPath3 = .
+		SccProjectFilePathRelativizedFromConnection3 = Common\\
+		SccProjectUniqueName4 = DALFactory\\GSZX.DALFactory.csproj
+		SccLocalPath4 = .
+		SccProjectFilePathRelativizedFromConnection4 = DALFactory\\
+		SccProjectUniqueName5 = DBUtility\\GSZX.DBUtility.csproj
+		SccLocalPath5 = .
+		SccProjectFilePathRelativizedFromConnection5 = DBUtility\\
+		SccProjectUniqueName6 = IDAL\\GSZX.IDAL.csproj
+		SccLocalPath6 = .
+		SccProjectFilePathRelativizedFromConnection6 = IDAL\\
+		SccProjectUniqueName7 = Model\\GSZX.Model.csproj
+		SccLocalPath7 = .
+		SccProjectFilePathRelativizedFromConnection7 = Model\\
+		SccProjectUniqueName8 = SQLServerDAL\\GSZX.SQLServerDAL.csproj
+		SccLocalPath8 = .
+		SccProjectFilePathRelativizedFromConnection8 = SQLServerDAL\\
+		SccProjectUniqueName9 = UI\\GSZX.UI.csproj
+		SccLocalPath9 = .
+		SccProjectFilePathRelativizedFromConnection9 = UI\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30A30FE8-E3CB-4881-8613-C79952F70651}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30A30FE8-E3CB-4881-8613-C79952F70651}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30A30FE8-E3CB-4881-8613-C79952F70651}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30A30FE8-E3CB-4881-8613-C79952F70651}.Release|Any CPU.Build.0 = Release|Any CPU
+		{782EB662-7A7A-449F-B70B-CD5171DB78B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{782EB662-7A7A-449F-B70B-CD5171DB78B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{782EB662-7A7A-449F-B70B-CD5171DB78B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{782EB662-7A7A-449F-B70B-CD5171DB78B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{531D39C2-1D0D-446F-BDDC-590B96CA0726}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{531D39C2-1D0D-446F-BDDC-590B96CA0726}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{531D39C2-1D0D-446F-BDDC-590B96CA0726}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{531D39C2-1D0D-446F-BDDC-590B96CA0726}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D856C778-5340-4943-8123-44134FF0984B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D856C778-5340-4943-8123-44134FF0984B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D856C778-5340-4943-8123-44134FF0984B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D856C778-5340-4943-8123-44134FF0984B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B18E664E-325A-41F8-BEF1-6704332D1BEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B18E664E-325A-41F8-BEF1-6704332D1BEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B18E664E-325A-41F8-BEF1-6704332D1BEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B18E664E-325A-41F8-BEF1-6704332D1BEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7B0DC3A-A345-426A-A266-A85DB8AD30AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7B0DC3A-A345-426A-A266-A85DB8AD30AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7B0DC3A-A345-426A-A266-A85DB8AD30AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7B0DC3A-A345-426A-A266-A85DB8AD30AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A88EF8E-6AD4-4EEF-BACD-69729752B606}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A88EF8E-6AD4-4EEF-BACD-69729752B606}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A88EF8E-6AD4-4EEF-BACD-69729752B606}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A88EF8E-6AD4-4EEF-BACD-69729752B606}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E890B50-83AC-439E-8A11-F9CCF9BB634E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E890B50-83AC-439E-8A11-F9CCF9BB634E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E890B50-83AC-439E-8A11-F9CCF9BB634E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E890B50-83AC-439E-8A11-F9CCF9BB634E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07E72092-1D90-47EC-803A-FCB0D272BC30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07E72092-1D90-47EC-803A-FCB0D272BC30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07E72092-1D90-47EC-803A-FCB0D272BC30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07E72092-1D90-47EC-803A-FCB0D272BC30}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

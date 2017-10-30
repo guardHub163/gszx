@@ -1,0 +1,90 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBUtility", "DBUtility\DBUtility.csproj", "{8B2BFF0E-D06B-43FB-B3B2-BA014F0F45C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{90D22BC2-48CE-4BBE-936E-F4D616E4552C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLServerDAL", "SQLServerDAL\SQLServerDAL.csproj", "{EDEF7173-DFF0-4CE3-9556-80B9ADC01F7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{CE882B58-0208-468F-99F3-F181AC7751D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DALFactory", "DALFactory\DALFactory.csproj", "{ADEE7EB0-11CA-4A33-B8EC-BB345FCA03D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{AA60C7B5-899D-4184-A58B-719EEB23633B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSZX.UI", "GSZX\GSZX.UI.csproj", "{5E5DFEF5-5EEC-497D-B24B-074747C8963C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDAL", "IDAL\IDAL.csproj", "{CF222A2D-4DF7-40D6-AA94-1AB88531BE84}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 9
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BLL\\BLL.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = BLL\\
+		SccProjectUniqueName2 = Common\\Common.csproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = Common\\
+		SccProjectUniqueName3 = DALFactory\\DALFactory.csproj
+		SccLocalPath3 = .
+		SccProjectFilePathRelativizedFromConnection3 = DALFactory\\
+		SccProjectUniqueName4 = DBUtility\\DBUtility.csproj
+		SccLocalPath4 = .
+		SccProjectFilePathRelativizedFromConnection4 = DBUtility\\
+		SccProjectUniqueName5 = GSZX\\GSZX.UI.csproj
+		SccLocalPath5 = .
+		SccProjectFilePathRelativizedFromConnection5 = GSZX\\
+		SccProjectUniqueName6 = IDAL\\IDAL.csproj
+		SccLocalPath6 = .
+		SccProjectFilePathRelativizedFromConnection6 = IDAL\\
+		SccProjectUniqueName7 = Model\\Model.csproj
+		SccLocalPath7 = .
+		SccProjectFilePathRelativizedFromConnection7 = Model\\
+		SccProjectUniqueName8 = SQLServerDAL\\SQLServerDAL.csproj
+		SccLocalPath8 = .
+		SccProjectFilePathRelativizedFromConnection8 = SQLServerDAL\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B2BFF0E-D06B-43FB-B3B2-BA014F0F45C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B2BFF0E-D06B-43FB-B3B2-BA014F0F45C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B2BFF0E-D06B-43FB-B3B2-BA014F0F45C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B2BFF0E-D06B-43FB-B3B2-BA014F0F45C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90D22BC2-48CE-4BBE-936E-F4D616E4552C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90D22BC2-48CE-4BBE-936E-F4D616E4552C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90D22BC2-48CE-4BBE-936E-F4D616E4552C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90D22BC2-48CE-4BBE-936E-F4D616E4552C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDEF7173-DFF0-4CE3-9556-80B9ADC01F7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDEF7173-DFF0-4CE3-9556-80B9ADC01F7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDEF7173-DFF0-4CE3-9556-80B9ADC01F7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDEF7173-DFF0-4CE3-9556-80B9ADC01F7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE882B58-0208-468F-99F3-F181AC7751D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE882B58-0208-468F-99F3-F181AC7751D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE882B58-0208-468F-99F3-F181AC7751D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE882B58-0208-468F-99F3-F181AC7751D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADEE7EB0-11CA-4A33-B8EC-BB345FCA03D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADEE7EB0-11CA-4A33-B8EC-BB345FCA03D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADEE7EB0-11CA-4A33-B8EC-BB345FCA03D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADEE7EB0-11CA-4A33-B8EC-BB345FCA03D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA60C7B5-899D-4184-A58B-719EEB23633B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA60C7B5-899D-4184-A58B-719EEB23633B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA60C7B5-899D-4184-A58B-719EEB23633B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA60C7B5-899D-4184-A58B-719EEB23633B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E5DFEF5-5EEC-497D-B24B-074747C8963C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E5DFEF5-5EEC-497D-B24B-074747C8963C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E5DFEF5-5EEC-497D-B24B-074747C8963C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E5DFEF5-5EEC-497D-B24B-074747C8963C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF222A2D-4DF7-40D6-AA94-1AB88531BE84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF222A2D-4DF7-40D6-AA94-1AB88531BE84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF222A2D-4DF7-40D6-AA94-1AB88531BE84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF222A2D-4DF7-40D6-AA94-1AB88531BE84}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "GS_WebService", "GS_WebService", "{CB3FE074-6052-4B94-8C01-500760E96A70}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = ""$/Src/GS_WebService", BRDAAAAA"
+		SccAuxPath = ""
+		SccLocalPath = ".."
+		SccProvider = "MSSCCI:Microsoft Visual SourceSafe"
+		TargetFramework = "3.5"
+		Debug.AspNetCompiler.VirtualPath = "/GS_WebService"
+		Debug.AspNetCompiler.PhysicalPath = "GS_WebService\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\GS_WebService\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/GS_WebService"
+		Release.AspNetCompiler.PhysicalPath = "GS_WebService\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\GS_WebService\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "55730"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccLocalPath0 = .
+		SccWebProject1 = true
+		SccProjectUniqueName1 = GS_WebService
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = GS_WebService\\
+		SccProjectEnlistmentChoice1 = 2
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CB3FE074-6052-4B94-8C01-500760E96A70}.Debug|.NET.ActiveCfg = Debug|.NET
+		{CB3FE074-6052-4B94-8C01-500760E96A70}.Debug|.NET.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

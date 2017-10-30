@@ -1,0 +1,618 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C0FA9423-D1B6-4BC8-B27A-F7B6C2040751}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CZZD.ERP.WinUI</RootNamespace>
+    <AssemblyName>WinUI</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FastReport, Version=1.2.76.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\FastReport.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Bars, Version=1.2.76.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\FastReport.Bars.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Editor, Version=1.2.76.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\FastReport.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTest.Designer.cs">
+      <DependentUpon>FrmTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Library\FrmLibrary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Library\FrmLibrary.Designer.cs">
+      <DependentUpon>FrmLibrary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Library\FrmRecordSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Library\FrmRecordSearch.Designer.cs">
+      <DependentUpon>FrmRecordSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Library\FrmShipmentEnder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Library\FrmShipmentEnder.Designer.cs">
+      <DependentUpon>FrmShipmentEnder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\FrmOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order\FrmOrder.Designer.cs">
+      <DependentUpon>FrmOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FrmCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FrmCompany.Designer.cs">
+      <DependentUpon>FrmCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FrmCompanyDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FrmCompanyDialog.Designer.cs">
+      <DependentUpon>FrmCompanyDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FrmCurrency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FrmCurrency.Designer.cs">
+      <DependentUpon>FrmCurrency.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FrmCurrencyDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FrmCurrencyDialog.Designer.cs">
+      <DependentUpon>FrmCurrencyDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FrmDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FrmDepartment.Designer.cs">
+      <DependentUpon>FrmDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FrmDepartmentDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FrmDepartmentDialog.Designer.cs">
+      <DependentUpon>FrmDepartmentDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FrmRoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FrmRoles.Designer.cs">
+      <DependentUpon>FrmRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FrmRolesDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FrmRolesDialog.Designer.cs">
+      <DependentUpon>FrmRolesDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FrmRolesFunction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FrmRolesFunction.Designer.cs">
+      <DependentUpon>FrmRolesFunction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FrmProductUnitDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FrmProductUnitDialog.Designer.cs">
+      <DependentUpon>FrmProductUnitDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FrmSafetyStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FrmSafetyStock.Designer.cs">
+      <DependentUpon>FrmSafetyStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FrmSafetyStockDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FrmSafetyStockDialog.Designer.cs">
+      <DependentUpon>FrmSafetyStockDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FrmSupplierPriceDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FrmSupplierPriceDialog.Designer.cs">
+      <DependentUpon>FrmSupplierPriceDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FrmUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FrmUser.Designer.cs">
+      <DependentUpon>FrmUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FrmUserDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FrmUserDialog.Designer.cs">
+      <DependentUpon>FrmUserDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FrmWarehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FrmWarehouse.Designer.cs">
+      <DependentUpon>FrmWarehouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FrmWarehouseDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FrmWarehouseDialog.Designer.cs">
+      <DependentUpon>FrmWarehouseDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\FrmOrdersInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order\FrmOrdersInfo.designer.cs">
+      <DependentUpon>FrmOrdersInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\FrmOrdersSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order\FrmOrdersSearch.designer.cs">
+      <DependentUpon>FrmOrdersSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\FrmMasterSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sys\FrmMasterSearch.Designer.cs">
+      <DependentUpon>FrmMasterSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\NavigationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sys\NavigationForm.Designer.cs">
+      <DependentUpon>NavigationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\OrderPrintSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sys\OrderPrintSetting.Designer.cs">
+      <DependentUpon>OrderPrintSetting.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmTest.resx">
+      <DependentUpon>FrmTest.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Library\FrmLibrary.resx">
+      <DependentUpon>FrmLibrary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Library\FrmRecordSearch.resx">
+      <DependentUpon>FrmRecordSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Library\FrmShipmentEnder.resx">
+      <DependentUpon>FrmShipmentEnder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\FrmOrder.resx">
+      <DependentUpon>FrmOrder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FrmCompany.resx">
+      <DependentUpon>FrmCompany.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FrmCompanyDialog.resx">
+      <DependentUpon>FrmCompanyDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FrmCurrency.resx">
+      <DependentUpon>FrmCurrency.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FrmCurrencyDialog.resx">
+      <DependentUpon>FrmCurrencyDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FrmDepartment.resx">
+      <DependentUpon>FrmDepartment.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FrmDepartmentDialog.resx">
+      <DependentUpon>FrmDepartmentDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FrmProductUnitDialog.resx">
+      <DependentUpon>FrmProductUnitDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FrmRoles.resx">
+      <DependentUpon>FrmRoles.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FrmRolesDialog.resx">
+      <DependentUpon>FrmRolesDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FrmRolesFunction.resx">
+      <DependentUpon>FrmRolesFunction.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FrmSafetyStock.resx">
+      <DependentUpon>FrmSafetyStock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FrmSafetyStockDialog.resx">
+      <DependentUpon>FrmSafetyStockDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FrmSupplierPriceDialog.resx">
+      <DependentUpon>FrmSupplierPriceDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FrmUser.resx">
+      <DependentUpon>FrmUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FrmUserDialog.resx">
+      <DependentUpon>FrmUserDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FrmWarehouse.resx">
+      <DependentUpon>FrmWarehouse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FrmWarehouseDialog.resx">
+      <DependentUpon>FrmWarehouseDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\FrmOrdersInfo.resx">
+      <DependentUpon>FrmOrdersInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\FrmOrdersSearch.resx">
+      <DependentUpon>FrmOrdersSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sys\FrmMasterSearch.resx">
+      <DependentUpon>FrmMasterSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sys\NavigationForm.resx">
+      <DependentUpon>NavigationForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sys\OrderPrintSetting.resx">
+      <DependentUpon>OrderPrintSetting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ERP.Bll\ERP.Bll.csproj">
+      <Project>{EF90FC70-06B7-4269-854B-6D25CC22C2E9}</Project>
+      <Name>ERP.Bll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ERP.CacheData\ERP.CacheData.csproj">
+      <Project>{C07459CD-CAA2-4A23-A969-4C88DA863E27}</Project>
+      <Name>ERP.CacheData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ERP.Common\ERP.Common.csproj">
+      <Project>{859BD356-F003-4F14-859B-CC3C6E060A08}</Project>
+      <Name>ERP.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ERP.Controls\ERP.ComControls.csproj">
+      <Project>{03F455FB-E13A-4DFD-A307-29CC293C2412}</Project>
+      <Name>ERP.ComControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ERP.IDAL\ERP.IDAL.csproj">
+      <Project>{FC10A42C-F85A-4D5C-BE6F-092E288A7565}</Project>
+      <Name>ERP.IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ERP.IF\ERP.IF.csproj">
+      <Project>{B1BF549A-6521-47C4-8725-D6E52490D9F0}</Project>
+      <Name>ERP.IF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ERP.Main\ERP.Main.csproj">
+      <Project>{D7923F6A-72FD-446A-8020-9E230022C120}</Project>
+      <Name>ERP.Main</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ERP.Model\ERP.Model.csproj">
+      <Project>{05DC5741-D410-47B1-9081-83E4BB19B0D5}</Project>
+      <Name>ERP.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\account_management.png" />
+    <Content Include="Resources\account_management_enabled.png" />
+    <Content Include="Resources\company.png" />
+    <Content Include="Resources\company_enabled.png" />
+    <Content Include="Resources\CompositionProducts.png" />
+    <Content Include="Resources\CompositionProducts_enabled.png" />
+    <Content Include="Resources\currency.png" />
+    <Content Include="Resources\currency_enabled.png" />
+    <Content Include="Resources\customer.png" />
+    <Content Include="Resources\customer_enabled.png" />
+    <Content Include="Resources\customer_price.png" />
+    <Content Include="Resources\customer_price_enabled.png" />
+    <Content Include="Resources\customer_reported.png" />
+    <Content Include="Resources\customer_reported_enabled.png" />
+    <Content Include="Resources\department.png" />
+    <Content Include="Resources\department_enabled.png" />
+    <Content Include="Resources\deposit.png" />
+    <Content Include="Resources\depositArr.png" />
+    <Content Include="Resources\depositArrSearch.png" />
+    <Content Include="Resources\depositArrSearch_enabled.png" />
+    <Content Include="Resources\depositArr_enabled.png" />
+    <Content Include="Resources\DepositNotify.png" />
+    <Content Include="Resources\DepositNotify_enabled.png" />
+    <Content Include="Resources\depositSearch.png" />
+    <Content Include="Resources\depositSearch_enabled.png" />
+    <Content Include="Resources\deposit_enabled.png" />
+    <Content Include="Resources\DownLoadCustomerDrawing.png" />
+    <Content Include="Resources\DownLoadCustomerDrawing_enabled.png" />
+    <Content Include="Resources\exchange.png" />
+    <Content Include="Resources\exchange_enabled.png" />
+    <Content Include="Resources\find.png" />
+    <Content Include="Resources\find_over.png" />
+    <Content Include="Resources\hs_code.png" />
+    <Content Include="Resources\hs_code_enabled.png" />
+    <Content Include="Resources\Inventory.png" />
+    <Content Include="Resources\InventorySearch.png" />
+    <Content Include="Resources\InventorySearch_enabled.png" />
+    <Content Include="Resources\InventoryStart.png" />
+    <Content Include="Resources\InventoryStart_enabled.png" />
+    <Content Include="Resources\Inventory_enabled.png" />
+    <Content Include="Resources\invoicing_summary .png" />
+    <Content Include="Resources\invoicing_summary_enabled.png" />
+    <Content Include="Resources\line_delete.png" />
+    <Content Include="Resources\line_delete_over.png" />
+    <Content Include="Resources\line_download.png" />
+    <Content Include="Resources\line_download_over.png" />
+    <Content Include="Resources\line_find.png" />
+    <Content Include="Resources\line_find_over.png" />
+    <Content Include="Resources\line_upload.png" />
+    <Content Include="Resources\line_upload_over.png" />
+    <Content Include="Resources\location.png" />
+    <Content Include="Resources\location_enabled.png" />
+    <Content Include="Resources\machine2.png" />
+    <Content Include="Resources\machine_enabled2.png" />
+    <Content Include="Resources\menuline.jpg" />
+    <Content Include="Resources\menu_border.png" />
+    <Content Include="Resources\names.png" />
+    <Content Include="Resources\names_enabled.png" />
+    <Content Include="Resources\OEM_product_management.png" />
+    <Content Include="Resources\OEM_product_management_enabled.png" />
+    <Content Include="Resources\OEM_sales_performance.png" />
+    <Content Include="Resources\OEM_sales_performance_enabled.png" />
+    <Content Include="Resources\orderAlloation.png" />
+    <Content Include="Resources\orderAlloation_enabled.png" />
+    <Content Include="Resources\orderCopy.png" />
+    <Content Include="Resources\orderCopy_enabled.png" />
+    <Content Include="Resources\orderEntry.png" />
+    <Content Include="Resources\orderEntry_enabled.png" />
+    <Content Include="Resources\orderModify.png" />
+    <Content Include="Resources\orderModify_enabled.png" />
+    <Content Include="Resources\orderSearch.png" />
+    <Content Include="Resources\orderSearch_enabled.png" />
+    <Content Include="Resources\orderVerify.png" />
+    <Content Include="Resources\orderVerify_enabled.png" />
+    <Content Include="Resources\Parts.png" />
+    <Content Include="Resources\Parts_enabled.png" />
+    <Content Include="Resources\payment.png" />
+    <Content Include="Resources\paymentSearch.png" />
+    <Content Include="Resources\paymentSearch_enabled.png" />
+    <Content Include="Resources\payment_enabled.png" />
+    <Content Include="Resources\ProduceProduct.png" />
+    <Content Include="Resources\ProduceProduct_enabled.png" />
+    <Content Include="Resources\product.png" />
+    <Content Include="Resources\ProductBuild.png" />
+    <Content Include="Resources\ProductBuildSearch.png" />
+    <Content Include="Resources\ProductBuildSearch_enabled.png" />
+    <Content Include="Resources\ProductBuild_enabled.png" />
+    <Content Include="Resources\Production.png" />
+    <Content Include="Resources\ProductionNotification.png" />
+    <Content Include="Resources\ProductionNotification_enabled.png" />
+    <Content Include="Resources\ProductionPlan.png" />
+    <Content Include="Resources\ProductionPlanSearch.png" />
+    <Content Include="Resources\ProductionPlanSearch_enabled.png" />
+    <Content Include="Resources\ProductionPlan_enabled.png" />
+    <Content Include="Resources\ProductionSchedule.png" />
+    <Content Include="Resources\ProductionSchedule_enabled.png" />
+    <Content Include="Resources\Production_enabled.png" />
+    <Content Include="Resources\ProductRelieve.png" />
+    <Content Include="Resources\ProductRelieveSearch.png" />
+    <Content Include="Resources\ProductRelieveSearch_enabled.png" />
+    <Content Include="Resources\ProductRelieve_enabled.png" />
+    <Content Include="Resources\product_enabled.png" />
+    <Content Include="Resources\product_group.png" />
+    <Content Include="Resources\product_group_enabled.png" />
+    <Content Include="Resources\product_parts.png" />
+    <Content Include="Resources\product_parts_enabled.png" />
+    <Content Include="Resources\product_unit.png" />
+    <Content Include="Resources\product_unit_enabled.png" />
+    <Content Include="Resources\purchase.png" />
+    <Content Include="Resources\PurchaseOrderEntry.png" />
+    <Content Include="Resources\PurchaseOrderEntry_enabled.png" />
+    <Content Include="Resources\PurchaseOrderSearch.png" />
+    <Content Include="Resources\PurchaseOrderSearch_enabled.png" />
+    <Content Include="Resources\PurchaseOrderSupplementEntry.png" />
+    <Content Include="Resources\PurchaseOrderSupplementEntry_enabled.png" />
+    <Content Include="Resources\PurchaseOrderSupplementSearch.png" />
+    <Content Include="Resources\PurchaseOrderSupplementSearch_enabled.png" />
+    <Content Include="Resources\purchaseSearch.png" />
+    <Content Include="Resources\purchaseSearch_enabled.png" />
+    <Content Include="Resources\purchase_enabled.png" />
+    <Content Include="Resources\Quotation.png" />
+    <Content Include="Resources\QuotationSearch.png" />
+    <Content Include="Resources\QuotationSearch_enabled.png" />
+    <Content Include="Resources\Quotation_enabled.png" />
+    <Content Include="Resources\reason2.png" />
+    <Content Include="Resources\reason_enabled2.png" />
+    <Content Include="Resources\Receipt.png" />
+    <Content Include="Resources\receiptMatch.png" />
+    <Content Include="Resources\receiptMatchSearch.png" />
+    <Content Include="Resources\receiptMatchSearch_enabled.png" />
+    <Content Include="Resources\receiptMatch_enabled.png" />
+    <Content Include="Resources\ReceiptSearch.png" />
+    <Content Include="Resources\ReceiptSearch_enabled.png" />
+    <Content Include="Resources\Receipt_enabled.png" />
+    <Content Include="Resources\ReceivingNotify.png" />
+    <Content Include="Resources\ReceivingNotify_enabled.png" />
+    <Content Include="Resources\roles.png" />
+    <Content Include="Resources\roles_enabled.png" />
+    <Content Include="Resources\safety_stock.png" />
+    <Content Include="Resources\safety_stock_enabled.png" />
+    <Content Include="Resources\sales.png" />
+    <Content Include="Resources\salesSearch.png" />
+    <Content Include="Resources\salesSearch_enabled.png" />
+    <Content Include="Resources\sales_enabled.png" />
+    <Content Include="Resources\save.png" />
+    <Content Include="Resources\save_over.png" />
+    <Content Include="Resources\seq.png" />
+    <Content Include="Resources\seq_enabled.png" />
+    <Content Include="Resources\Shipment.png" />
+    <Content Include="Resources\ShipmentSearch.png" />
+    <Content Include="Resources\ShipmentSearch_enabled.png" />
+    <Content Include="Resources\Shipment_enabled.png" />
+    <Content Include="Resources\sliptype.png" />
+    <Content Include="Resources\sliptype_enabled.png" />
+    <Content Include="Resources\Specification.png" />
+    <Content Include="Resources\Specification_enabled.png" />
+    <Content Include="Resources\StockAdjustment.png" />
+    <Content Include="Resources\StockAdjustmentSearch.png" />
+    <Content Include="Resources\StockAdjustmentSearch_enabled.png" />
+    <Content Include="Resources\StockAdjustment_enabled.png" />
+    <Content Include="Resources\StockNotify.png" />
+    <Content Include="Resources\StockNotify_enabled.png" />
+    <Content Include="Resources\StockSearch.png" />
+    <Content Include="Resources\StockSearch_enabled.png" />
+    <Content Include="Resources\supplier.png" />
+    <Content Include="Resources\SupplierDeposit.png" />
+    <Content Include="Resources\supplierDepositArr.png" />
+    <Content Include="Resources\supplierDepositArrSearch.png" />
+    <Content Include="Resources\supplierDepositArrSearch_enabled.png" />
+    <Content Include="Resources\supplierDepositArr_enabled.png" />
+    <Content Include="Resources\supplierDepositSearch.png" />
+    <Content Include="Resources\supplierDepositSearch_enabled.png" />
+    <Content Include="Resources\SupplierDeposit_enabled.png" />
+    <Content Include="Resources\supplier_enabled.png" />
+    <Content Include="Resources\supplier_price.png" />
+    <Content Include="Resources\supplier_price_enabled.png" />
+    <Content Include="Resources\taxation.png" />
+    <Content Include="Resources\taxation_enabled.png" />
+    <Content Include="Resources\TransferReceipt.png" />
+    <Content Include="Resources\TransferReceiptSearch.png" />
+    <Content Include="Resources\TransferReceiptSearch_enabled.png" />
+    <Content Include="Resources\TransferReceipt_enabled.png" />
+    <Content Include="Resources\unit.png" />
+    <Content Include="Resources\unit_enabled.png" />
+    <Content Include="Resources\unPaymentSearch.png" />
+    <Content Include="Resources\unPaymentSearch_enabled.png" />
+    <Content Include="Resources\unReceiptMatchSearch.png" />
+    <Content Include="Resources\unReceiptMatchSearch_enabled.png" />
+    <Content Include="Resources\UpLoadProductionDrawing.png" />
+    <Content Include="Resources\UpLoadProductionDrawing_enabled.png" />
+    <Content Include="Resources\user.png" />
+    <Content Include="Resources\userRoles.png" />
+    <Content Include="Resources\userRoles_enabled.png" />
+    <Content Include="Resources\user_enabled.png" />
+    <Content Include="Resources\warehouse.png" />
+    <Content Include="Resources\warehouse_enabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Export\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
